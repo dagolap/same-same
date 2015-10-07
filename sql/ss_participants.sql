@@ -1,9 +1,9 @@
-CREATE DATABASE IF NOT EXISTS 'samesame'
-USE 'samesame';
+CREATE DATABASE IF NOT EXISTS samesame;
+USE samesame;
 
 
 
-DROP TABLE IF EXISTS 'participants';
+DROP TABLE IF EXISTS participants;
 
 CREATE TABLE participants (
 	email varchar(100),
