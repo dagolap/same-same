@@ -20,9 +20,9 @@ A documentation on the concept, the use of the application, the intended users, 
 
 #####How to set up and run the application######
 1. Clone this repo.
-```bash
-git clone https://github.com/bouvet/same-same.git
-```
+     ```bash
+     git clone https://github.com/bouvet/same-same.git
+     ```
 
 2. Download and install node.js, either using your system package manager or from [nodejs.org](https://nodejs.org)
 (version 0.12.7 was used during development and version 0.10 has been tested).
@@ -31,24 +31,24 @@ git clone https://github.com/bouvet/same-same.git
 where *dbuser* is a MySQL user.
 with the necessary privileges to create new databases (e.g. the MySQL *root* user). The database can be installed on
 a separate host if desired in which case the two SQL scripts would need to be transferred to that host.
-```bash
-mysql -u dbuser -p < ss_answers.sql
-mysql -u dbuser -p < ss_participants.sql
-```
-*NOTE:* If using Windows the *mysql* command is most likely not on the path, in which case you will need to type the
-full path to the command (defaults to: `"C:\Program Files\MySQL\MySQL Server 5.x\bin\mysql"`).
+     ```bash
+     mysql -u dbuser -p < ss_answers.sql
+     mysql -u dbuser -p < ss_participants.sql
+     ```
+     *NOTE:* If using Windows the *mysql* command is most likely not on the path, in which case you will need to type the
+     full path to the command (defaults to: `"C:\Program Files\MySQL\MySQL Server 5.x\bin\mysql"`).
 
 4. Create a file named `config.local.js` in the `app` subfolder and make sure it contains the following, replacing
 the values with the ones specific to your installation (e.g. `dburl: 'localhost'` if the database server is on the same host).
-```javascript
-'use strict';
-var dbOptions = {
-     dburl: 'yourDBurl',
-     dbuser: 'yourDBuser',
-     dbpassword: 'yourDBpassword'
-}
-exports.dbOptions = dbOptions;
-```
+     ```javascript
+     'use strict';
+     var dbOptions = {
+          dburl: 'yourDBurl',
+          dbuser: 'yourDBuser',
+          dbpassword: 'yourDBpassword'
+     }
+     exports.dbOptions = dbOptions;
+     ```
 
 5. Run *npm start* from the root level of the project. This should install all further dependencies and fire up the application.
 
