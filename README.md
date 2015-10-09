@@ -1,4 +1,4 @@
-####Same same, but different####
+###Same same, but different###
 
 by Lars Nedberg
 
@@ -14,7 +14,7 @@ Both the user and the admin part of the application can be accessed from the mai
 
 Part 2 is presenting statistics from the answers gathered in part 1.
 
-#####How to set up and run the application######
+####Installation and running#####
 1. Clone this repo.
      ```bash
      git clone https://github.com/bouvet/same-same.git
@@ -54,3 +54,10 @@ the values with the ones specific to your installation (e.g. `dburl: 'localhost'
 5. Run *npm start* from the root level of the project. This should install all further dependencies and fire up the application.
 
 6. Access the application at **ipaddress:port** (e.g. localhost:3000).
+
+####Usage####
+#####Recommended equipment#####
+1. A computer to run the server.
+2. One or more tablets for users to answer the questionnaire.
+3. One or more large screens to display the statistics slideshows.
+4. A router to provide a local network for the computer and tablets.
