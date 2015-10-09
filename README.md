@@ -30,11 +30,7 @@ a separate host if desired in which case the two SQL scripts would need to be tr
      ```bash
      mysql -u dbuser -p < ss_answers.sql
      mysql -u dbuser -p < ss_participants.sql
-     ```
-     I could also be useful to seed the database with answers provided by Bouvet employees. This can be achieved by
-     running the SQL file called `samesame_etter_bouvet.sql` located in the project root folder.
-     ```bash
-     mysql -u dbuser -p samesame < samesame_etter_bouvet.sql
+     mysql -u dbuser -p samesame < ss_bouvet_answers.sql
      ```
      *NOTE:* If using Windows the *mysql* command is most likely not on the path, in which case you will need to type the
      full path to the command (defaults to: `"C:\Program Files\MySQL\MySQL Server 5.x\bin\mysql"`).
