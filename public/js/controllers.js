@@ -486,7 +486,7 @@ angular.module("samesameApp.controllers", [])
 
 		var getListname = function(index) {
 			if (index === 0) {
-				return "Karrieredagen 15 deltageren";
+				return "TDC-deltakeren";
 			}
 			else if (index === 1) {
 				return "Bouvetansatte";
